@@ -5,7 +5,7 @@
     padding: 0; 
     /* font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif; */
     /* Font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif; */
-    font-family: 'Poppins', sans-serif;
+    font-family: segoe ui, sans-serif;
 }
 
 .nav-side{
@@ -13,22 +13,115 @@
     align-items: center;
     gap: 20px;
     font-size: 13px;
-    Font-weight: 100;
+    Font-weight: 400;
 }
 .nav-dropdown{
     list-style: none;
 }
 .nav-fonts{
-    font-size: 13px;
-    Font-weight: 100;
+    font-size: 11px;
+    Font-weight: 400;
     gap: 20px;
 }
 .fa-solid, .fa-regular{
     color: #000;
-    font-size: large;
-}
-.nav-stl{
-    Font-weight: 100;
     font-size: 13px;
 }
+.nav-stl{
+    Font-weight: 400;
+    font-size: 13px;
+}
+/* ********************************************************************************************* */
+.img1, .img2 { /* Combined and fixed the missing dot on img2 */
+    position: relative;
+}
 
+
+.card-btn{
+    background:#0067b8 !important;
+    color:#fff !important;
+    border-radius:0 !important;
+}
+
+.card-background{
+    background:transparent !important;
+    border:none !important;
+}
+
+.carousel-caption{
+    top: 0;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0;
+    text-align: left !important;
+}
+
+.card-i{
+    position: static; /* remove absolute */
+    border-radius: 0 !important;
+    margin-top: 40px;
+    max-width: 500px;
+}
+
+/* Play Pause Button */
+
+.carousel-bottom-controls{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+#carouselExampleInterval{
+    position: relative;
+}
+
+.carousel-custom-controls{
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    z-index: 100;
+}
+
+.play-pause-btn,
+.carousel-control-prev-custom,
+.carousel-control-next-custom{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+
+    background: rgba(255,255,255,0.9);
+    color: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    font-size: 18px;
+}
+/* ------------------------------------------------------------ */
+.microsoft-links{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    margin:40px 0;
+    text-align:center;
+}
+
+.microsoft-links div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    cursor:pointer;
+}
+
+.microsoft-links i{
+    font-size:40px;
+    margin-bottom:10px;
+}

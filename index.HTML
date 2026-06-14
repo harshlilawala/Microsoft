@@ -6,6 +6,7 @@
     <title>Document</title>
     <!-- Css -->
     <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Font Awesome -->
@@ -15,7 +16,7 @@
     
   <!-- Content here -->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg ">
         <div class="container">
              <a class="me-3" href="#">
              <img src="images/Logo_Microsoft.png" alt="Microsoft" width="120px" height="24" >
@@ -45,14 +46,11 @@
                 </li>
                 <li class="nav-item nav-stl">
                     <a class="nav-link" href="#">Support</a>
-                </li>
-
-              
+                </li>              
                 <li class="nav-item nav-stl">
                     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
-
                     <form class="d-flex nav-side" role="search">
                           <li class="nav-item dropdown nav-dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -76,7 +74,92 @@
             </div>
         </nav>
     </div>
+<section class="carousel-section">
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 
+    <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" data-bs-interval="5000">
+            <img src="./images/cara_1.avif" class="d-block w-100" alt="">
+
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="card card-i">
+                        <div class="card-body">
+                            <h4>Meet Surface Pro</h4>
+                            <p>This laptop's unrivalled flexibility and AI features like Live Captions and Cocreator,
+                                 enable you to do more than you ever imagined.</p>
+                            <a href="#" class="btn card-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" data-bs-interval="5000">
+            <img src="./images/cara_3.avif" class="d-block w-100" alt="">
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="card card-i card-background">
+                        <div class="card-body">
+                            <h4 class="card-title mb-md-4" >Your Personal AI Assistant</h4>
+                            <p class="card-text mb-md-4">
+                                    Microsoft 365 delivers cloud storage, advanced security and Microsoft Copilot in your favourite apps – all in one plan.
+                            </p>
+                            <a href="#" class="btn card-btn card-mb-4">
+                                Shop Microsoft Copilot
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Controls -->
+  <div class="carousel-custom-controls">
+
+    <button class="carousel-control-prev-custom"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+        ❮
+    </button>
+
+    <button id="playPauseBtn" class="play-pause-btn">
+        ❚❚
+    </button>
+
+    <button class="carousel-control-next-custom"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+        ❯
+    </button>
+</div>
+</section>
+<!-- ----------------------------------- -->
+<div class="microsoft-links">
+    <div>
+        <i class="fa-brands fa-microsoft"></i>
+        <span>Choose your Microsoft 365</span>
+    </div>
+
+    <div>
+        <i class="fa-brands fa-xbox"></i>
+        <span>Shop Xbox</span>
+    </div>
+
+    <div>
+        <i class="fa-brands fa-microsoft"></i>
+        <span>Get Windows 11</span>
+    </div>
+
+    <div>
+        <i class="fa-brands fa-microsoft"></i>
+        <span>Explore Surface Devices</span>
+    </div>
+</div>
+<!-- 1-image Card -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
